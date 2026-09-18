@@ -1,40 +1,8 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #1a1a1a;
-}
 
 .hero {
-    background: linear-gradient(135deg, #0078d4, #005a9e);
+    background: url('assets/images/phasebound-cloudworkshop-bg.png') center/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 80px 20px;
-}
-
-.modules {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.module-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.module-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #1a1a1a;
-    border: 1px solid #ddd;
-    transition: 0.2s;
-}
-
-.module-card:hover {
-    border-color: #0078d4;
-    transform: translateY(-4px);
+    padding: 120px 20px;
+    border-bottom: 4px solid #0078d4;
 }
