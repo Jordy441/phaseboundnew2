@@ -3,6 +3,31 @@ body {
   background-size: cover;
   color: #e5e7eb;
 }
+.hero {
+  background: url('jordan-wright-phasebound.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 22px;
+  color: #f9fafb;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(15, 23, 42, 0.75),
+    rgba(15, 23, 42, 0.85)
+  );
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* Optional overlay for readability */
 body::before {
