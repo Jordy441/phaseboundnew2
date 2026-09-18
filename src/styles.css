@@ -1,8 +1,30 @@
-
-.hero {
-    background: url('assets/images/phasebound-cloudworkshop-bg.png') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
-    border-bottom: 4px solid #0078d4;
+.module-hero {
+    position: relative;
+    height: 60vh;
+    background: url('../assets/images/phasebound-cloudworkshop-bg.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.module-hero .overlay {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(6px);
+}
+
+.module-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.module-hero p {
+    font-size: 1.2rem;
+    color: #aad4ff;
+}
+
