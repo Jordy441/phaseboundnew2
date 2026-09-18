@@ -1,41 +1,180 @@
-<section id="profiles" class="profiles-section">
-  <div class="section-header">
-    <h2>Meet Your Mentors</h2>
-    <p>Learn from experienced professionals guiding you through Azure and cloud transformation.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure Learning Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-logo">☁</span>
+        <div class="brand-text">
+          <span class="brand-title">Azure Learning Hub</span>
+          <span class="brand-subtitle">Skills for cloud professionals</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <input type="search" class="search-input" placeholder="Search modules, labs, exams…" />
+        <button class="primary-btn">Sign in</button>
+      </div>
+    </header>
+
+    <!-- Layout: sidebar + main -->
+    <div class="layout">
+      <aside class="sidebar">
+        <nav class="nav">
+          <h2 class="nav-heading">Learning paths</h2>
+          <ul class="nav-list">
+            <li class="nav-item active">Azure Fundamentals (AZ‑900)</li>
+            <li class="nav-item">Administrator (AZ‑104)</li>
+            <li class="nav-item">Developer (AZ‑204)</li>
+            <li class="nav-item">Architect (AZ‑305)</li>
+            <li class="nav-item">Data & AI</li>
+          </ul>
+
+          <h2 class="nav-heading">Resources</h2>
+          <ul class="nav-list">
+            <li class="nav-item">Hands‑on labs</li>
+            <li class="nav-item">Exam prep</li>
+            <li class="nav-item">Documentation</li>
+            <li class="nav-item">Community</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <!-- Hero / overview -->
+        <section class="hero">
+          <div class="hero-text">
+            <h1>Build your Azure skills, step by step.</h1>
+            <p>
+              Follow curated learning paths, track your progress, and get exam‑ready with labs,
+              quizzes, and real‑world scenarios.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn">Continue AZ‑900 path</button>
+              <button class="ghost-btn">Browse all paths</button>
+            </div>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-label">Current path</span>
+              <span class="metric-value">AZ‑900</span>
+              <div class="metric-progress">
+                <div class="metric-progress-bar" style="width: 65%;"></div>
+              </div>
+              <span class="metric-caption">65% complete</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Completed modules</span>
+              <span class="metric-value">18</span>
+              <span class="metric-caption">Last activity: 2h ago</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Practice exams</span>
+              <span class="metric-value">3</span>
+              <span class="metric-caption">Average score: 82%</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modules grid -->
+        <section class="section">
+          <div class="section-header">
+            <h2>AZ‑900 modules</h2>
+            <button class="ghost-btn small">View syllabus</button>
+          </div>
+          <div class="card-grid">
+            <article class="module-card">
+              <span class="module-tag">Foundations</span>
+              <h3>Cloud concepts</h3>
+              <p>Core cloud principles, shared responsibility, and consumption‑based models.</p>
+              <div class="module-meta">
+                <span>Duration: 45 min</span>
+                <span>Status: In progress</span>
+              </div>
+              <button class="primary-btn secondary">Resume module</button>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Core services</span>
+              <h3>Compute & networking</h3>
+              <p>Virtual machines, App Service, containers, VNets, and load balancing basics.</p>
+              <div class="module-meta">
+                <span>Duration: 60 min</span>
+                <span>Status: Not started</span>
+              </div>
+              <button class="primary-btn secondary">Start module</button>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Security</span>
+              <h3>Identity & governance</h3>
+              <p>Azure AD, RBAC, policies, and cost management fundamentals.</p>
+              <div class="module-meta">
+                <span>Duration: 50 min</span>
+                <span>Status: Completed</span>
+              </div>
+              <button class="ghost-btn secondary">Review content</button>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Hands‑on</span>
+              <h3>Deploy your first workload</h3>
+              <p>Guided lab: deploy a web app, secure it, and monitor performance.</p>
+              <div class="module-meta">
+                <span>Duration: 75 min</span>
+                <span>Status: Scheduled</span>
+              </div>
+              <button class="primary-btn secondary">Schedule lab</button>
+            </article>
+          </div>
+        </section>
+
+        <!-- Upcoming & notes -->
+        <section class="section two-column">
+          <div class="panel">
+            <div class="section-header">
+              <h2>Upcoming sessions</h2>
+            </div>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <span class="timeline-title">Live Q&A: AZ‑900 exam strategy</span>
+                <span class="timeline-meta">Monday · 19:00 BST · Online</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-title">Lab: Secure Azure resources</span>
+                <span class="timeline-meta">Wednesday · 14:00 BST · Sandbox</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-title">Study group: Practice questions</span>
+                <span class="timeline-meta">Friday · 18:30 BST · Teams</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <div class="section-header">
+              <h2>Personal notes</h2>
+            </div>
+            <div class="notes">
+              <p>• Revisit cost management and SLAs before next practice exam.</p>
+              <p>• Create flashcards for key Azure services and their use cases.</p>
+              <p>• Explore free tier options for hands‑on experiments.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <span>© 2026 Azure Learning Hub · Not affiliated with Microsoft official training.</span>
+      <span>Made for cloud learners.</span>
+    </footer>
   </div>
-
-  <div class="profiles-grid">
-    <article class="profile-card">
-      <img src="jordan-wright.jpg" alt="Jordan Wright portrait" class="profile-photo" />
-      <h3>Jordan Wright</h3>
-      <p class="role">Azure Certification Mentor · PhaseBound</p>
-      <ul class="profile-highlights">
-        <li>Mechanical & Motorsport Engineering background</li>
-        <li>Guides learners through AZ‑900, AI‑900, DP‑900, and AZ‑104</li>
-        <li>Focuses on practical labs and exam confidence</li>
-      </ul>
-    </article>
-
-    <article class="profile-card">
-      <img src="john-fairest.jpg" alt="John Fairest portrait" class="profile-photo" />
-      <h3>John Fairest</h3>
-      <p class="role">AI Consultant & Trainer · Drone Pilot</p>
-      <ul class="profile-highlights">
-        <li>Expert in AI & Prompt Engineering</li>
-        <li>Drone operations and smart meter systems</li>
-        <li>Empowering innovation in the cloud</li>
-      </ul>
-    </article>
-
-    <article class="profile-card">
-      <img src="fulden-cetin.jpg" alt="Fulden Cetin portrait" class="profile-photo" />
-      <h3>Fulden Cetin</h3>
-      <p class="role">Operations Manager · Networklife Group</p>
-      <ul class="profile-highlights">
-        <li>Guides regulated industries through cloud transformation</li>
-        <li>Blends technical expertise with people‑first leadership</li>
-        <li>Turns technology into real business results</li>
-      </ul>
-    </article>
-  </div>
-</section>
+</body>
+</html>
