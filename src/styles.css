@@ -83,17 +83,13 @@ a:hover {
 -------------------------------------------------- */
 
 header {
-  background: linear-gradient(
-    135deg,
-    var(--sunset-light),
-    var(--sunset-mid),
-    var(--sunset-warm)
-  );
+  background: url("src/assets/c2.jpg") center/cover no-repeat;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 
 
 
