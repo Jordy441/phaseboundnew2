@@ -83,12 +83,18 @@ a:hover {
 -------------------------------------------------- */
 
 header {
-  background: var(--surface);
+  background: linear-gradient(
+    135deg,
+    var(--sunset-light),
+    var(--sunset-mid),
+    var(--sunset-warm)
+  );
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 
 .nav {
   display: flex;
