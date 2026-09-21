@@ -1,6 +1,28 @@
 /* --------------------------------------------------
    B/* --------------------------------------------------
-   Cloud Background
+   Cloud Ba/* Logo placement and styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo img {
+  height: 56px; /* Adjust size as needed */
+  width: auto;
+  display: block;
+  border-radius: 4px;
+  filter: drop-shadow(0 0 8px rgba(77, 163, 255, 0.6));
+}
+
+/* Optional: fix logo to top-left corner */
+header .logo {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  z-index: 1000;
+}
+ckground
 -------------------------------------------------- */
 .hero {
   background:
