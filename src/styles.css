@@ -23,6 +23,30 @@ header .logo {
   z-index: 1000;
 }
 ckground
+body {
+  background: url("https://scontent.fbhd1-2.fna.fbcdn.net/v/t39.30808-6/809168008_10165664893074042_931270666483633439_n.jpg?stp=dst-jpg_tt6&cstp=mx380x580&ctp=s380x580&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3aaOfVG9m2wQ7kNvwGScaln&_nc_oc=AdrfPMTetVDhzG9IFuVBwYZJOtEosPd-ceHqgAUny4mrenlVrEG3GSH_Nx3pJBjt9bJV5CHiaApUrxmrv43eIPsu&_nc_zt=23&_nc_ht=scontent.fbhd1-2.fna&_nc_gid=QUmaTH3o9XK5sOSgx8P5pw&_nc_ss=7b2a8&oh=00_AQKCwA_2fLxTAWvh5-PbHWi_FkLc-G0zocfbH4kVpDOQ9A&oe=6AB6BA4E") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35); /* darkens slightly */
+  z-index: -1;
+}
+
+.hero {
+  background: transparent;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+
 -------------------------------------------------- */
 .hero {
   background:
